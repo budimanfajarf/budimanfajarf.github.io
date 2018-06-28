@@ -7,11 +7,39 @@
     <title>Kehilangan Arah</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css"> 
+    <style>
+        html, body {
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .content {
+            text-align: center;
+            margin-top: -60px;
+            padding: 16px;
+        }
+        .title {
+            font-size: 40px;
+        }        
+        .body {
+            font-size: 32px;
+        }
+    </style>
 </head>
 <body>
-    <main style="width: 100%;">
-        <h1>{ 404 }</h1>
-        <h2>Anda kehilangan arah, kembali ke  <a href="/">arah yg benar</a></h2>
-    </main>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">{ 404 }</h1>
+            <div class="body">Anda kehilangan arah, kembali ke  <a href="/">arah yg benar</a></div>
+            <br>    
+            <p>Selanjutnya mungkin anda akan kehilangan Cinta, segera konsultasikan dg dokter</p>            
+        </div>
+    </div>
 </body>
 </html>

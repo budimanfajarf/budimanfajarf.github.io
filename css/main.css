@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
 
 * {
     font-family: 'Ubuntu', sans-serif;
@@ -10,12 +10,13 @@
 }  
 
 body {
-    margin: 24px 16px;
+    margin: 24px 12px;
 }
 
 main {
     padding: 12px 0 18px;
     margin: auto;
+    width: 100%;
 }
 
 section, nav {
@@ -52,41 +53,46 @@ h4, p {
     font-size: 18px;
 }
 h5, nav, footer {
+    font-size: 15px;
+}
+
+.json {
     font-size: 16px;
 }
 
 a {
-    color: #2980b9;
+    color: #1e88e5;
 }
 
 a:hover {
-    color: #3498db;
+    color: #1565c0;
 }
 
 .red {
-    color: tomato;
+    color: #e53935;
 }
 
 .profile-container {
     position: relative;
     top: 0;
     left: auto; 
-    height: 250px;
-    width: 300px;
+    height: 220px;
+    width: 290px;
     margin: auto;
 }
 
 .profile {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+    width: 160px;
+    height: 160px;
 }
 
 .profile-photo {
     position: absolute;    
     bottom: 0;
     right: 0;
-    z-index: 1;    
+    z-index: 1;
+    transform: rotate(5deg);    
+    border-radius: 30%;
 }
 
 .profile-avatar {
@@ -94,6 +100,7 @@ a:hover {
     top: -20px;
     right: 60px;
     z-index: 2;
+    border-radius: 40%;
 }
 
 .profile-logo {
@@ -101,6 +108,8 @@ a:hover {
     bottom: 0;
     left: 0;
     z-index: 3;
+    transform: rotate(-15deg);
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
@@ -120,7 +129,7 @@ a:hover {
         width: 50%;
     }
     .budi {
-        font-size: 150%;
+        font-size: 140%;
     }
     .json {
         font-size: 175%;
@@ -133,3 +142,15 @@ a:hover {
     }
 }
 
+#sosmed a {
+    text-decoration: none;
+    opacity: 0.92;
+}
+#sosmed a:hover {
+    opacity: 1;
+}
+#sosmed img {
+    width: 50px;
+    height: auto;
+    margin: 0 12px;
+}
