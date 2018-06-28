@@ -1,4 +1,129 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+
+* {
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;
+    color: #333447;
+    line-height: 1.5;
+    text-align: center; 
+    margin: 0;
+    padding: 0;   
+}  
+
+body {
+    margin: 24px 16px;
 }
+
+main {
+    padding: 12px 0 18px;
+    margin: auto;
+}
+
+section, nav {
+    margin-bottom: 26px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333447;
+}
+
+footer a:hover {
+    color: #333447;
+}
+
+strong, b {
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 22px;
+}
+h4, p {
+    font-size: 18px;
+}
+h5, nav, footer {
+    font-size: 16px;
+}
+
+a {
+    color: #2980b9;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+.red {
+    color: tomato;
+}
+
+.profile-container {
+    position: relative;
+    top: 0;
+    left: auto; 
+    height: 250px;
+    width: 300px;
+    margin: auto;
+}
+
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.profile-photo {
+    position: absolute;    
+    bottom: 0;
+    right: 0;
+    z-index: 1;    
+}
+
+.profile-avatar {
+    position: absolute;    
+    top: -20px;
+    right: 60px;
+    z-index: 2;
+}
+
+.profile-logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+    main {
+        width: 70%;
+    }    
+    .budi {
+        font-size: 130%;
+    }
+    .json {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+    main {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 60em) {  /* 960px */
+    main {
+        width: 40%;
+    }
+}
+
