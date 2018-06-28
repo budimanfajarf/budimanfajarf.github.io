@@ -119,6 +119,12 @@ a:hover {
     main {
         width: 50%;
     }
+    .budi {
+        font-size: 150%;
+    }
+    .json {
+        font-size: 175%;
+    }    
 }
 
 @media only screen and (min-width: 60em) {  /* 960px */
