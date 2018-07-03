@@ -150,3 +150,34 @@ a:hover {
     height: auto;
     margin: 0 12px;
 }
+
+.budi {
+    position: relative;
+    margin: 0 auto;
+    border-right: 4px solid #333447;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 16em;
+}
+.typewriter {
+    animation: _typewriter 5s steps(40) 1s 1 normal both,
+    _blinkTextCursor 750ms steps(40) infinite normal;
+}
+
+@keyframes _typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 16em;
+    }
+}
+
+@keyframes _blinkTextCursor {
+    from {
+        border-right-color: #333447;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
