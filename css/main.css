@@ -52,12 +52,8 @@ h3 {
 h4, p {
     font-size: 18px;
 }
-h5, nav, footer {
+h5, nav, footer, .json {
     font-size: 15px;
-}
-
-.json {
-    font-size: 16px;
 }
 
 a {
@@ -90,7 +86,7 @@ a:hover {
     position: absolute;    
     bottom: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
     transform: rotate(5deg);    
     border-radius: 30%;
 }
@@ -99,7 +95,7 @@ a:hover {
     position: absolute;    
     top: -20px;
     right: 60px;
-    z-index: 2;
+    z-index: 3;
     border-radius: 40%;
 }
 
@@ -107,7 +103,7 @@ a:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 3;
+    z-index: 4;
     transform: rotate(-15deg);
     border-radius: 50%;
 }
