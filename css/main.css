@@ -154,7 +154,7 @@ a:hover {
 .budi {
     position: relative;
     margin: 0 auto;
-    border-right: 4px solid #333447;
+    border-right: 3px solid #333447;
     white-space: nowrap;
     overflow: hidden;
     width: 16em;
