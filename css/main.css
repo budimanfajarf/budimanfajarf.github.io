@@ -152,11 +152,21 @@ a:hover {
 }
 
 .budimanfajarf {
-    /* animation: _blinkTextCursor 1s steps(40) infinite normal; */
-    /* background-color: #515869;  */
+    background-color: #515869;  
+    border-radius: 3px;   
+}
+.border {
     border-right: 2px solid #528bff;    
-    animation: _blinkTextCursor 1s infinite, 
-               _backgroundColor 4s step-start normal;    
+    animation: _blinkTextCursor 1s infinite normal;
+}
+
+@keyframes _blinkTextCursor {
+    from {
+        border-right-color: transparent;
+    }
+    to {
+        border-right-color: #528bff;
+    }
 }
 
 #sosmed a {
@@ -183,7 +193,7 @@ a:hover {
     .json {
         font-size: 150%;
     }
-    .budimanfajarf {
+    .border {
         border-right-width: 3px;
     }    
 }
@@ -199,7 +209,7 @@ a:hover {
         font-size: 175%;
         letter-spacing: 2px;
     }    
-    .budimanfajarf {
+    .border {
         border-right-width: 4px;
     }
 }
@@ -207,23 +217,5 @@ a:hover {
 @media only screen and (min-width: 60em) {  /* 960px */
     main {
         width: 40%;
-    }
-}
-
-@keyframes _blinkTextCursor {
-    from {
-        border-right-color: #528bff;
-    }
-    to {
-        border-right-color: #282c34;
-    }
-}
-
-@keyframes _backgroundColor {
-    from {
-        background-color: transparent;
-    }
-    to {
-        background-color: #515869;        
     }
 }
