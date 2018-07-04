@@ -151,34 +151,12 @@ a:hover {
     border-radius: 50%;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
-    main {
-        width: 70%;
-    }    
-    .budi {
-        font-size: 130%;
-    }
-    .json {
-        font-size: 150%;
-    }
-}
-
-@media only screen and (min-width: 45em) {  /* 720px */
-    main {
-        width: 50%;
-    }
-    .budi {
-        font-size: 140%;
-    }
-    .json {
-        font-size: 175%;
-    }    
-}
-
-@media only screen and (min-width: 60em) {  /* 960px */
-    main {
-        width: 40%;
-    }
+.budimanfajarf {
+    /* animation: _blinkTextCursor 1s steps(40) infinite normal; */
+    /* background-color: #515869;  */
+    border-right: 2px solid #528bff;    
+    animation: _blinkTextCursor 1s infinite, 
+               _backgroundColor 4s step-start normal;    
 }
 
 #sosmed a {
@@ -195,6 +173,57 @@ a:hover {
     margin: 0 12px;
 }
 
-.json {
-    letter-spacing: 1px;
+@media only screen and (min-width: 33.75em) {  /* 540px */
+    main {
+        width: 70%;
+    }    
+    .budi {
+        font-size: 130%;
+    }
+    .json {
+        font-size: 150%;
+    }
+    .budimanfajarf {
+        border-right-width: 3px;
+    }    
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+    main {
+        width: 50%;
+    }
+    .budi {
+        font-size: 140%;
+    }
+    .json {
+        font-size: 175%;
+        letter-spacing: 2px;
+    }    
+    .budimanfajarf {
+        border-right-width: 4px;
+    }
+}
+
+@media only screen and (min-width: 60em) {  /* 960px */
+    main {
+        width: 40%;
+    }
+}
+
+@keyframes _blinkTextCursor {
+    from {
+        border-right-color: #528bff;
+    }
+    to {
+        border-right-color: #282c34;
+    }
+}
+
+@keyframes _backgroundColor {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #515869;        
+    }
 }
