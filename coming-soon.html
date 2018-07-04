@@ -53,26 +53,15 @@
     <div class="container">
         <div class="content">
             <h1 class="title">{ Coming Soon }</h1>
-            <p class="body" id="time"></p>
+            <p class="body" id="body"></p>
         </div>
     </div>
+    <script src="js/count-down.js"></script>    
     <script>
-        let countDownDate = new Date("Jul 31, 2018 00:00:00").getTime();
-        let countDownFunction = setInterval(function() {
-            let now      = new Date().getTime();
-            let distance = countDownDate - now;
-            let days     = Math.floor(distance / (1000 * 60 * 60 * 24));
-            let hours    = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            let minutes  = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            let seconds  = Math.floor((distance % (1000 * 60)) / 1000);             
-
-            document.getElementById("time").innerHTML = days + "d &nbsp;" + hours + "h &nbsp;" + minutes + "m &nbsp;" + seconds + "s &nbsp;";
-            
-            if(distance < 0) {
-                clearInterval(countDownFunction);
-                document.getElementById("time").innerHTML = "";
-            }                
-        });    
-    </script>
+        let countDownDate = new Date("Jul 20, 2018 00:00:00").getTime();
+        setInterval(function() {
+            document.getElementById("body").innerHTML = countDownTime(countDownDate);
+        });
+    </script>    
 </body>
 </html>
