@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Ubuntu', sans-serif;
-    color: #333447;
+    color: #ccc;
     line-height: 1.5;
     text-align: center; 
     margin: 0;
@@ -11,6 +11,7 @@
 
 body {
     margin: 24px 12px;
+    background-color: #282c34;
 }
 
 main {
@@ -23,13 +24,21 @@ section, nav {
     margin-bottom: 26px;
 }
 
-footer a {
+nav a {
     text-decoration: none;
-    color: #333447;
+}
+
+nav a.active:hover {
+    background-color: transparent;
+}
+
+footer, footer a {
+    text-decoration: none;
+    color: #7f848e;
 }
 
 footer a:hover {
-    color: #333447;
+    background-color: transparent;
 }
 
 strong, b {
@@ -42,12 +51,14 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
     font-size: 32px;
+    color: #e06c75;
 }
 h2 {
     font-size: 26px;
 }
 h3 {
     font-size: 22px;
+    color: #d19a66;    
 }
 h4, p {
     font-size: 18px;
@@ -57,15 +68,47 @@ h5, nav, footer, .json {
 }
 
 a {
-    color: #1e88e5;
+    color: #528bff;
 }
 
 a:hover {
-    color: #1565c0;
+    background-color: #515869;
 }
 
 .red {
-    color: #e53935;
+    color: #e06c75;
+}
+
+.green {
+    color: #98c379;
+}
+
+.purple {
+    color: #c678dd;
+}
+
+.orange {
+    color: #d19a66;
+}
+
+.yellow {
+    color: #e5c07b;
+}
+
+.grey {
+    color: #7f848e;
+}
+
+.blue {
+    color: #56b6c2;
+}
+
+.blue-dark {
+    color: #528bff;
+}
+
+.lighter {
+    font-weight: 300;
 }
 
 .profile-container {
@@ -140,10 +183,11 @@ a:hover {
 
 #sosmed a {
     text-decoration: none;
-    opacity: 0.92;
+    opacity: 0.8;
 }
 #sosmed a:hover {
     opacity: 1;
+    background-color: transparent;
 }
 #sosmed img {
     width: 50px;

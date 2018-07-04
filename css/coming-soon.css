@@ -13,15 +13,19 @@ html, body {
     text-align: center;
     margin-top: -60px;
     padding: 16px;
+    background-color: #484e5b;
 }
 .title {
     font-size: 48px;
     letter-spacing: 12px;
     text-transform: uppercase;
     font-weight: lighter;
+    color: #e06c75;
+    background-color: #515869;
 }        
 .body {
     font-size: 36px;
+    color: #528bff;
 }
 
 @media only screen and (max-width: 600px) {
