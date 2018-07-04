@@ -194,3 +194,7 @@ a:hover {
     height: auto;
     margin: 0 12px;
 }
+
+.json {
+    letter-spacing: 1px;
+}
