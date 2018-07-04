@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{ Curiculum Vitae } budimanfajarf : Budiman Fajar Firdaus</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css"> 
+    <style>
+        html, body {
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .content {
+            text-align: center;
+            margin-top: -60px;
+            padding: 16px;
+        }
+        .title {
+            font-size: 48px;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            font-weight: lighter;
+        }        
+        .body {
+            font-size: 36px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .title {
+                font-size: 24px;
+                letter-spacing: 6px;
+            }
+            .body {
+                font-size: 18px;
+            }
+        }   
+    </style> 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121802855-1"></script> 
+    <script src="js/analytics.js"></script>    
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">{ Coming Soon }</h1>
+            <p class="body" id="body"></p>
+        </div>
+    </div>
+    <script src="js/count-down.js"></script>    
+    <script>
+        let countDownDate = new Date("Aug 31, 2018 00:00:00").getTime();
+        setInterval(function() {
+            document.getElementById("body").innerHTML = countDownTime(countDownDate);
+        });
+    </script>    
+</body>
+</html>
