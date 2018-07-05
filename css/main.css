@@ -151,24 +151,6 @@ a:hover {
     border-radius: 50%;
 }
 
-.budimanfajarf {
-    background-color: #515869;  
-    border-radius: 3px;   
-}
-.border {
-    border-right: 2px solid #528bff;    
-    animation: _blinkTextCursor 1s infinite normal;
-}
-
-@keyframes _blinkTextCursor {
-    from {
-        border-right-color: transparent;
-    }
-    to {
-        border-right-color: #528bff;
-    }
-}
-
 #sosmed a {
     text-decoration: none;
     opacity: 0.95;
@@ -193,9 +175,6 @@ a:hover {
     .json {
         font-size: 150%;
     }
-    .border {
-        border-right-width: 3px;
-    }    
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
@@ -208,9 +187,6 @@ a:hover {
     .json {
         font-size: 175%;
         letter-spacing: 2px;
-    }    
-    .border {
-        border-right-width: 4px;
     }
 }
 
