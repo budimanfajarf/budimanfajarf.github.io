@@ -36,4 +36,10 @@ html, body {
     .body {
         font-size: 18px;
     }
-}  
+}
+
+@media only screen and (max-width: 320px) {
+    .title {
+        letter-spacing: 3px;
+    }
+}
