@@ -1,5 +1,6 @@
-var TxtType = function(el, toRotate, period) {
+var TxtType = function(el, toRotate, period, link) {
     this.toRotate = toRotate;
+    this.link = link;    
     this.el = el;
     this.loopNum = 0;
     this.period = parseInt(period, 10) || 2000;
@@ -11,6 +12,8 @@ var TxtType = function(el, toRotate, period) {
 TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
+
+    this.el.href = this.link[i];
 
     if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -44,8 +47,9 @@ window.onload = function() {
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
+        var link = elements[i].getAttribute('data-link');
         if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+          new TxtType(elements[i], JSON.parse(toRotate), period, JSON.parse(link));
         }
     }
     // INJECT CSS
