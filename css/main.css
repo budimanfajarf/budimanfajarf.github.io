@@ -151,6 +151,10 @@ a:hover {
     border-radius: 50%;
 }
 
+.budi a {
+    text-decoration: none;
+}
+
 #sosmed a {
     text-decoration: none;
     opacity: 0.95;
