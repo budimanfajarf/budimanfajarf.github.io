@@ -151,6 +151,12 @@ a:hover {
     border-radius: 50%;
 }
 
+.budi {
+    background-color: #2c313c;
+    width: 100%;
+    margin: auto;
+}
+
 .budi a {
     text-decoration: none;
 }
@@ -175,6 +181,7 @@ a:hover {
     }    
     .budi {
         font-size: 130%;
+        width: 490px;
     }
     .json {
         font-size: 150%;
@@ -190,6 +197,7 @@ a:hover {
     }
     .budi {
         font-size: 140%;
+        width: 620px;
     }
     .json {
         font-size: 175%;
@@ -209,3 +217,9 @@ a:hover {
         letter-spacing: -0.5px;
     }
 } 
+
+@media only screen and (max-width: 539px) {
+    .budi {
+        max-width: 305px;
+    }
+}
