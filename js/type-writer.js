@@ -55,6 +55,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid #528bff}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.12em solid #528bff; padding: 4px 0px 4px 4px;}";
     document.body.appendChild(css);
 };
