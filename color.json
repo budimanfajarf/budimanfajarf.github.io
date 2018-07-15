@@ -1,0 +1,24 @@
+{
+    "oneDarkPro" : {
+        "dark" : [
+            "21252b",
+            "282c34",
+            "2c313c"
+        ],
+        "hover" : [
+            "484e5b",
+            "515869"
+        ],        
+        "blue" : [
+            "56b6c2",
+            "528bff"
+        ],        
+        "white"  : "ccc",
+        "grey"   : "7f848e",        
+        "red"    : "e06c75",
+        "green"  : "98c379",
+        "purple" : "c678dd",
+        "orange" : "d19a66",
+        "yellow" : "e5c07b"        
+    }
+}
