@@ -1,0 +1,39 @@
+.flexbox-gallery {
+    margin: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+.flexbox-gallery a {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 260px;
+    margin: .5vw;
+}
+
+.flexbox-gallery a img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flexbox-gallery a:hover {
+    background-color: transparent;
+}       
+.flexbox-gallery a:hover img {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 560px) {
+    .flexbox-gallery a {
+        margin: 1.5vw 0.5vw;
+        width: 100%;
+    }
+}

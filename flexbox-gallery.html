@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{ FlexBox Gallery } budimanfajarf : Budiman Fajar Firdaus</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/flexbox-gallery.css">
+
+    <!-- lightgallery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css"> 
+
+    <!-- jQuery version must be >= 1.8.0; -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- lightgallery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>  
+    <style>
+        * {
+            text-align: unset;
+        }
+        header, main, footer {
+            text-align: center;
+        }
+        main {
+            width: 100%;
+        }
+    </style>        
+</head>
+<body>
+    <header>
+        <h1>{ Design }</h1>
+        <nav>
+            <a href="/">/budimanfajarf</a><a href="#" class="active">/design</a>
+        </nav>
+    </header>
+    <main class="flexbox-gallery" id="lightgallery">
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Antologi Puisi Iren.png" alt="">
+        </a>
+        <a href="images/examples/Bilangan Acak.png">
+            <img src="images/examples/Bilangan Acak.png" alt="">
+        </a>
+        <a href="images/examples/From Zero To_.png">
+            <img src="images/examples/From Zero To_.png" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Happy Ied Mubarak 1439H Sakata Gintoki.jpg" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Mobile Legend Championship FA69.png" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Hello World.png" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Hiruma Yoichi.png" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Kemeja FTI IF 14 R.jpg" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/PPL Iren.jpg" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Profile Avatar.jpg" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Profile Logo New Red.png" alt="">
+        </a>
+        <a href="images/examples/Antologi Puisi Iren.png">
+            <img src="images/examples/Profile Logo.png" alt="">
+        </a>        
+    </main>
+    <footer>
+        <a href="/">#2018 #budimanfajarf</a>
+    </footer>  
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery({
+                thumbnail: true
+            }); 
+        });
+    </script>      
+</body>
+</html>
