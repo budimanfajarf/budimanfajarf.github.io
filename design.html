@@ -7,6 +7,7 @@
     <title>{ Design } budimanfajarf : Budiman Fajar Firdaus</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/flexbox-gallery.css">
 
     <!-- lightgallery CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css"> 
@@ -22,11 +23,13 @@
 
     <!-- lightgallery plugins -->
     <script src="js/lg-thumbnail.min.js"></script>
-    <script src="js/lg-fullscreen.min.js"></script>    
-
+    <script src="js/lg-fullscreen.min.js"></script>
+    <script src="js/lg-zoom.min.js"></script>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121802855-1"></script> 
-    <script src="js/analytics.js"></script>     -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121802855-1"></script> 
+    <script src="js/analytics.js"></script>  
+
     <style>
         * {
             text-align: unset;
@@ -36,8 +39,17 @@
         }
         main {
             width: 100%;
-        }        
-    </style>
+        }
+        .lg-backdrop {
+            background-color: #2c313c;
+        }
+        .lg-outer .lg-thumb-outer, .lg-outer .lg-toogle-thumb {
+            background-color: rgba(0, 0, 0, 0.45)
+        }
+        .lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+            border-color: #528bff;
+        }
+    </style>        
 </head>
 <body>
     <header>
@@ -46,37 +58,66 @@
             <a href="/">/budimanfajarf</a><a href="#" class="active">/design</a>
         </nav>
     </header>
-    <main>
-        <div id="lightgallery">
-            <a href="https://drive.google.com/uc?export=view&id=1JrAYxj-Si12BiHZbk4YoEOVvaL04U_6D">
-                <img src="https://drive.google.com/uc?export=view&id=1JrAYxj-Si12BiHZbk4YoEOVvaL04U_6D" />
-            </a>
-            <a href="images/profile-logo.jpg">
-                <img src="images/profile-logo.jpg" />
-            </a>
-            <a href="images/profile-avatar.jpg">
-                <img src="images/profile-avatar.jpg" />
-            </a>
-            <a href="images/profile-logo.jpg">
-                <img src="images/profile-logo.jpg" />
-            </a>
-            <a href="images/profile-avatar.jpg">
-                <img src="images/profile-avatar.jpg" />
-            </a>
-            <a href="images/profile-logo.jpg">
-                <img src="images/profile-logo.jpg" />
-            </a>                        
-        </div>
+    <main class="flexbox-gallery" id="lightgallery">
+        <a href="https://i.imgur.com/PBqmYrW.png">
+            <img src="https://i.imgur.com/PBqmYrW.png" alt="Profile Logo Simple Red">
+        </a>        
+        <a href="https://imgur.com/ob1yAQC.png">
+            <img src="https://imgur.com/ob1yAQC.png" alt="Profile Logo Flat">
+        </a>
+        <a href="https://i.imgur.com/gzPHAxJ.jpg">
+            <img src="https://i.imgur.com/gzPHAxJ.jpg" alt="Profile Avatar">
+        </a>
+        <a href="https://i.imgur.com/MGsF25X.jpg">
+            <img src="https://i.imgur.com/MGsF25X.jpg" alt="Happy-Ied-Mubarak-1439H">
+        </a>
+        <a href="https://i.imgur.com/AlihPsR.png">
+            <img src="https://i.imgur.com/AlihPsR.png" alt="Sakata-Gintoki">
+        </a>
+        <a href="https://i.imgur.com/ahcFzm6.png">
+            <img src="https://i.imgur.com/ahcFzm6.png" alt="Hiruma-Yoichi">
+        </a>
+        <a href="https://i.imgur.com/mUN2wRv.jpg">
+            <img src="https://i.imgur.com/mUN2wRv.jpg" alt="Antologi-Puisi-Iren">
+        </a>
+        <a href="https://i.imgur.com/PaASuUH.jpg">
+            <img src="https://i.imgur.com/PaASuUH.jpg" alt="PPL-Iren-&-Iday">
+        </a>        
+        <a href="https://i.imgur.com/qRo0L7M.png" class="big">
+            <img src="https://i.imgur.com/qRo0L7M.png" alt="Hello World">
+        </a>
+        <a href="https://i.imgur.com/1W5H535.png">
+            <img src="https://i.imgur.com/1W5H535.png" alt="Bilangan Acak">
+        </a>        
+        <a href="https://i.imgur.com/dc0ACGj.jpg">
+            <img src="https://i.imgur.com/dc0ACGj.jpg" alt="Kemeja-FTI-IF-14-R">
+        </a>
+        <a href="https://i.imgur.com/VAm9199.jpg">
+            <img src="https://i.imgur.com/VAm9199.jpg" alt="From Zero To_?">
+        </a>        
+        <a href="https://i.imgur.com/2J6fgF5.jpg">
+            <img src="https://i.imgur.com/2J6fgF5.jpg" alt="Wedding Sandy & Nita">
+        </a>
+        <a href="https://i.imgur.com/xSv9Ksm.jpg">
+            <img src="https://i.imgur.com/xSv9Ksm.jpg" alt="Ridwan Kamil">
+        </a> 
+        <a href="https://i.imgur.com/EnqoC5k.jpg">
+            <img src="https://i.imgur.com/EnqoC5k.jpg" alt="The Boss Baby">
+        </a> 
+        <a href="https://i.imgur.com/uLOui9k.jpg">
+            <img src="https://i.imgur.com/uLOui9k.jpg" alt="Mobile Legend Championship FA69">
+        </a>                
+        <a href="https://i.imgur.com/dRdxsJ9.jpg" class="big">
+            <img src="https://i.imgur.com/dRdxsJ9.jpg" alt="Yudisium-FTI-Unibba-2017">
+        </a>                                
     </main>
     <footer>
         <a href="/">#2018 #budimanfajarf</a>
-    </footer>
+    </footer>  
     <script type="text/javascript">
         $(document).ready(function() {
-            $("#lightgallery").lightGallery({
-                thumbnail: true
-            }); 
+            $("#lightgallery").lightGallery();
         });
-    </script>
+    </script>      
 </body>
 </html>

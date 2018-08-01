@@ -33,6 +33,10 @@
     opacity: 0.8;
 }
 
+.flexbox-gallery .big {
+    width: 520px;
+}
+
 @media screen and (max-width: 560px) {
     .flexbox-gallery a {
         margin: 1.5vw 0.5vw;
