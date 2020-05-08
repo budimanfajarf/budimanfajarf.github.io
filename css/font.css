@@ -1,0 +1,20 @@
+.medium {
+/* content / judul */  
+  font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  letter-spacing: 0;  
+/* content serif / bacaan */  
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;   
+  letter-spacing: -0.003em;  
+/* content sans-serif / heading bacaan */  
+  font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;  
+  letter-spacing: -0.022em;  
+}
+
+.mediumish {
+/* serif untuk bacaan */
+  font-family: Merriweather, Georgia, serif;
+/* sans-serif untuk judul, menu, dikit dikit */
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
